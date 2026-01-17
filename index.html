@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiRECETA.COM - Salud Natural, Belleza Casera y Hogar</title>
+    <meta name="description"
+        content="Descubre los mejores remedios caseros, tips de belleza natural y trucos del hogar. Recetas fáciles para el cuidado de tu piel, cabello y bienestar.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#f0fdfa', // teal-50 equivalent specific
+                            DEFAULT: '#0d9488', // teal-600
+                            dark: '#115e59', // teal-800
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .ad-placeholder {
+            background-color: #f3f4f6;
+            border: 2px dotted #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem auto;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- TAREA 1: NAVBAR -->
+    <nav
+        class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <span
+                            class="bg-teal-100 text-teal-600 p-2 rounded-xl group-hover:bg-teal-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </span>
+                        <span class="font-bold text-2xl tracking-tight text-slate-800">Mi<span
+                                class="text-teal-600">RECETA</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-teal-600 font-semibold text-sm uppercase tracking-wider border-b-2 border-teal-600 pb-1">Inicio</a>
+                    <a href="cabello.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Cabello</a>
+                    <a href="piel.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Piel</a>
+                    <a href="cuerpo.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Cuerpo</a>
+                    <a href="hogar.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Hogar</a>
+                </div>
+
+                <!-- Mobile Menu Button (Placeholder) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-teal-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MONETIZACIÓN: HEADER BANNER -->
+    <div class="container mx-auto px-4 py-6 flex justify-center">
+        <div class="ad-placeholder w-[728px] h-[90px] max-w-full">
+            ESPACIO PUBLICIDAD [728x90]
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="container mx-auto px-4 mb-12">
+        <div
+            class="bg-white rounded-3xl p-8 md:p-12 shadow-sm text-center border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-teal-400 to-emerald-400"></div>
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-800 mb-4">Bienestar Natural al Alcance de tu Mano</h1>
+            <p class="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-8 font-light">
+                Recetas caseras, secretos de belleza y trucos del hogar que transformarán tu vida diaria. Simple,
+                natural y efectivo.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="bg-teal-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-teal-600/20 hover:bg-teal-700 hover:shadow-teal-600/30 transition-all transform hover:-translate-y-1">
+                    Ver lo más nuevo
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- TAREA 2: GRID DE CONTENIDO (10 TEMAS) -->
+    <main class="container mx-auto px-4 pb-20">
+        <h2 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
+            <span class="w-2 h-8 bg-teal-500 rounded-full"></span>
+            Tendencias Virales
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+            <!-- Cards Template -->
+            <!-- Card 1 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/e2e8f0/0d9488?text=Agua+de+Arroz" alt="Agua de Arroz"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-teal-600 shadow-sm">
+                        PIEL</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        El Secreto Coreano: Agua de Arroz Fermentada</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">Descubre cómo este simple ingrediente de cocina
+                        puede darte una "piel de vidrio" luminosa y sin imperfecciones.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">5 min lectura</span>
+                        <a href="agua-arroz.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">
+                            Leer más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/f0fdfa/0d9488?text=Romero+y+Canela" alt="Tónico Capilar"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-teal-600 shadow-sm">
+                        CABELLO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Romero y Canela: El Tónico 'Crece Pelo'</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">La receta de la abuela que reactiva folículos y
+                        detiene la caída desde la primera semana de uso.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">4 min lectura</span>
+                        <a href="romero-canela.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/fff7ed/ea580c?text=Exfoliante+Limon" alt="Exfoliante Limón"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-orange-500 shadow-sm">
+                        CUERPO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Adiós Manchas en Codos y Rodillas</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">Bicarbonato y limón: la combinación efervescente
+                        que aclara zonas oscuras de forma natural.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">3 min lectura</span>
+                        <a href="exfoliante-limon.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/ecfdf5/059669?text=Hielo+Terapia" alt="Hielo Terapia"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-teal-600 shadow-sm">
+                        ROSTRO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Hielo-Terapia con Pepino</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">¿Por qué deberías frotar pepino congelado en tu
+                        cara cada mañana? Beneficios antiinflamatorios inmediatos.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">3 min lectura</span>
+                        <a href="hielo-pepino.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/78350f/fff?text=Scrub+de+Cafe" alt="Scrub Café"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-amber-700 shadow-sm">
+                        CUERPO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Adiós 'Piel de Fresa'</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">El poderoso scrub de café y aceite de coco que
+                        deja tus piernas increíblemente suaves y tonificadas.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">6 min lectura</span>
+                        <a href="scrub-cafe.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/ecfccb/166534?text=Te+Verde+Bolsas" alt="Té Verde"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-lime-600 shadow-sm">
+                        ROSTRO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Truco para Ojeras Oscuras</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">No tires las bolsas de té verde: Úsalas con
+                        cucharas frías para revivir tu mirada en 10 minutos.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">2 min lectura</span>
+                        <a href="te-verde-ojos.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/fee2e2/991b1b?text=Vinagre+Manzana" alt="Vinagre Manzana"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-red-600 shadow-sm">
+                        CABELLO</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Cabello Brillante como Espejo</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">El enjuague final de vinagre de manzana que
+                        equilibra el pH y sella la cutícula instantáneamente.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">5 min lectura</span>
+                        <a href="vinagre-manzana.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/fef3c7/b45309?text=Avena+y+Miel" alt="Avena y Miel"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">
+                        PIEL</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Mascarilla Calmante SOS</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">Avena y miel: el remedio de emergencia para
+                        pieles irritadas, con acné o con rojeces.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">4 min lectura</span>
+                        <a href="avena-miel.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/f5f5f5/171717?text=Serum+Pestañas" alt="Sérum Pestañas"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm">
+                        BELLEZA</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Pestañas Kilométricas Naturales</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">Sérum nocturno facilísimo de Aceite de Ricino y
+                        Almendras para una mirada impactante.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">3 min lectura</span>
+                        <a href="serum-pestanas.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 10 -->
+            <article
+                class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-2xl hover:shadow-teal-900/5 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/cffafe/0891b2?text=Detox+Pies" alt="Detox Pies"
+                        class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-cyan-600 shadow-sm">
+                        SALUD</div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3
+                        class="text-xl font-bold text-slate-800 mb-3 leading-tight group-hover:text-teal-600 transition-colors">
+                        Detox de Pies para Talones Agrietados</h3>
+                    <p class="text-slate-500 text-sm mb-4 line-clamp-3">El baño milagroso de sal, vinagre y listerine
+                        que deja tus pies como nuevos en 20 minutos.</p>
+                    <div class="mt-auto pt-4 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs text-slate-400 font-medium">7 min lectura</span>
+                        <a href="detox-pies.html"
+                            class="text-teal-600 hover:text-teal-700 font-semibold text-sm flex items-center gap-1">Leer
+                            más <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-100 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-4 md:mb-0">
+                    <span class="font-bold text-2xl tracking-tight text-slate-800">Mi<span
+                            class="text-teal-600">RECETA</span></span>
+                    <p class="text-slate-400 text-sm mt-2">Tu guía diaria de bienestar y belleza natural.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition-colors"><span
+                            class="sr-only">Facebook</span>FB</a>
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition-colors"><span
+                            class="sr-only">Instagram</span>IG</a>
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition-colors"><span
+                            class="sr-only">Pinterest</span>PI</a>
+                </div>
+            </div>
+            <div class="border-t border-slate-50 pt-8 text-center text-slate-400 text-sm">
+                &copy; 2024 MiRECETA.COM. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo Modelo - MiRECETA.COM</title>
+    <meta name="description" content="Descripción corta del artículo para SEO.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#f0fdfa',
+                            DEFAULT: '#0d9488',
+                            dark: '#115e59',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .ad-placeholder {
+            background-color: #f3f4f6;
+            border: 2px dotted #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-weight: bold;
+            text-align: center;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .ad-label {
+            position: absolute;
+            top: 2px;
+            right: 4px;
+            font-size: 0.6rem;
+            color: #9ca3af;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- NAVBAR IDENTICAL -->
+    <nav
+        class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <span
+                            class="bg-teal-100 text-teal-600 p-2 rounded-xl group-hover:bg-teal-600 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </span>
+                        <span class="font-bold text-2xl tracking-tight text-slate-800">Mi<span
+                                class="text-teal-600">RECETA</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-teal-600 font-semibold text-sm uppercase tracking-wider">Inicio</a>
+                    <a href="cabello.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Cabello</a>
+                    <a href="piel.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Piel</a>
+                    <a href="cuerpo.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Cuerpo</a>
+                    <a href="hogar.html"
+                        class="text-slate-500 hover:text-teal-600 font-medium text-sm uppercase tracking-wider transition-colors hover:bg-slate-50 px-3 py-2 rounded-lg">Hogar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MONETIZACIÓN: HEADER BANNER (UBICACIÓN 1) -->
+    <div class="container mx-auto px-4 py-6 flex justify-center">
+        <div class="ad-placeholder w-[728px] h-[90px] max-w-full">
+            <span class="ad-label">Publicidad</span>
+            ESPACIO PUBLICIDAD [728x90]
+        </div>
+    </div>
+
+    <!-- MAIN GRID LAYOUT -->
+    <div class="container mx-auto px-4 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- CONTENIDO PRINCIPAL (ARTÍCULO) -->
+            <main class="lg:col-span-8 bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-slate-100">
+
+                <!-- Breadcrumbs -->
+                <nav class="flex mb-6" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3 text-sm text-slate-400">
+                        <li class="inline-flex items-center"><a href="#" class="hover:text-teal-600">Inicio</a></li>
+                        <li>/</li>
+                        <li><a href="#" class="hover:text-teal-600 max-w-[150px] truncate">Categoría</a></li>
+                    </ol>
+                </nav>
+
+                <!-- EDITABLE: TÍTULO -->
+                <h1 class="text-3xl md:text-5xl font-bold text-slate-800 mb-6 leading-tight">
+                    El Secreto Coreano: Agua de Arroz Fermentada para Piel de Vidrio
+                </h1>
+
+                <!-- Meta Info -->
+                <div class="flex items-center gap-4 mb-8 text-sm text-slate-500 border-b border-slate-50 pb-6">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-teal-50 text-teal-700 font-bold px-2 py-1 rounded-md text-xs">TENDENCIA</span>
+                    </div>
+                    <span>•</span>
+                    <span>Actualizado hoy</span>
+                </div>
+
+                <!-- EDITABLE: IMAGEN DESTACADA -->
+                <div class="w-full h-80 md:h-96 rounded-2xl overflow-hidden mb-8 shadow-md">
+                    <img src="https://placehold.co/800x600/e2e8f0/0d9488?text=Imagen+Principal" alt="Artículo"
+                        class="w-full h-full object-cover">
+                </div>
+
+                <!-- EDITABLE: INTRODUCCIÓN -->
+                <div class="text-lg text-slate-600 leading-8 mb-8">
+                    <p class="mb-4">
+                        ¿Has notado alguna vez lo impecable y luminosa que es la piel de las mujeres coreanas? No es
+                        casualidad, ni siempre es genética. Durante siglos, el secreto mejor guardado en Asia ha sido un
+                        ingrediente que todos tenemos en nuestra cocina: el agua de arroz.
+                    </p>
+                    <p>
+                        Este tónico natural es rico en vitaminas, minerales y aminoácidos que trabajan maravillas en la
+                        piel, promoviendo la renovación celular y aportando ese brillo característico conocido como
+                        "Glass Skin".
+                    </p>
+                </div>
+
+                <!-- MONETIZACIÓN: BANNER DESPUÉS DE LA INTRO (UBICACIÓN 3.1) -->
+                <div class="flex justify-center my-8">
+                    <div class="ad-placeholder w-[468px] h-[60px] max-w-full">
+                        <span class="ad-label">Publicidad</span>
+                        ESPACIO PUBLICIDAD [468x60]
+                    </div>
+                </div>
+
+                <!-- EDITABLE: DESARROLLO (INGREDIENTES Y PROCESO) -->
+                <h2 class="text-2xl font-bold text-teal-700 mb-4 mt-8">Lo que necesitarás</h2>
+                <ul class="list-none space-y-3 mb-8 text-slate-600 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-teal-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span>1/2 taza de arroz orgánico (blanco o integral)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-teal-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span>2 tazas de agua purificada</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-teal-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span>Un frasco de vidrio esterilizado</span>
+                    </li>
+                </ul>
+
+                <!-- MONETIZACIÓN: NATIVE BANNER DESPUÉS DE INGREDIENTES (UBICACIÓN 3.2) -->
+                <div class="my-10 p-4 border border-slate-100 rounded-xl bg-white shadow-sm">
+                    <div
+                        class="ad-placeholder w-full h-auto min-h-[120px] p-4 flex flex-col justify-center gap-2 !m-0 !bg-slate-50">
+                        <span class="ad-label">Patrocinado</span>
+                        <div class="w-full h-4 bg-slate-200 rounded w-3/4 mx-auto"></div>
+                        <div class="w-full h-4 bg-slate-200 rounded w-1/2 mx-auto"></div>
+                        <p class="text-xs mt-2">ESPACIO PUBLICIDAD [NATIVE BANNER]</p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold text-teal-700 mb-4">Paso a Paso</h2>
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                    <p>
+                        <strong>1. Lava el arroz:</strong> Enjuaga el arroz rápidamente para quitar impurezas. No lo
+                        laves demasiado, o quitarás los nutrientes.
+                    </p>
+                    <p>
+                        <strong>2. Primera infusión:</strong> Coloca el arroz en un bol y agrega el agua. Déjalo reposar
+                        durante 30 minutos. Verás que el agua se torna blanca lechosa.
+                    </p>
+
+                    <!-- MONETIZACIÓN: BANNER INTRO TEX (UBICACIÓN 3.3) -->
+                    <!-- Flotado o centrado -->
+                    <div class="relative w-full md:w-[320px] mx-auto md:float-right md:ml-6 mb-6">
+                        <div class="ad-placeholder w-[160px] h-[300px] mx-auto">
+                            <span class="ad-label">Publicidad</span>
+                            ESPACIO [160x300]
+                        </div>
+                    </div>
+
+                    <p>
+                        <strong>3. Fermentación (El truco secreto):</strong> Para potenciar sus efectos antioxidantes,
+                        deja el agua de arroz a temperatura ambiente durante 24 horas hasta que huela ligeramente ácido.
+                        Luego hierve para detener la fermentación, deja enfriar y guarda en la nevera.
+                    </p>
+                    <p>
+                        Aplica este tónico frío con un algodón todas las mañanas y noches. ¡Tu piel lo agradecerá con
+                        una luminosidad increíble!
+                    </p>
+                </div>
+
+                <!-- CONCLUSIÓN -->
+                <div class="bg-teal-50 p-6 rounded-2xl mt-8 border border-teal-100">
+                    <h3 class="font-bold text-teal-800 mb-2">💡 Tip Extra</h3>
+                    <p class="text-teal-700 text-sm">
+                        Puedes usar el agua de arroz restante como último enjuague para tu cabello. Le dará un brillo
+                        espectacular y suavidad extrema.
+                    </p>
+                </div>
+
+                <!-- MONETIZACIÓN: MOBILE ONLY BANNER FINAL (UBICACIÓN 3.4) -->
+                <div class="block md:hidden mt-8 flex justify-center">
+                    <div class="ad-placeholder w-[320px] h-[50px]">
+                        <span class="ad-label">Publicidad Móvil</span>
+                        ESPACIO [320x50]
+                    </div>
+                </div>
+
+            </main>
+
+            <!-- SIDEBAR DERECHA -->
+            <aside class="lg:col-span-4 space-y-8">
+
+                <!-- MONETIZACIÓN: SIDEBAR TOP (UBICACIÓN 2.1) -->
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex justify-center">
+                    <div class="ad-placeholder w-[300px] h-[250px] !m-0">
+                        <span class="ad-label">Publicidad</span>
+                        ESPACIO [300x250]
+                    </div>
+                </div>
+
+                <!-- Widget: Artículos Destacados -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-slate-800 text-lg mb-4">Lo más leído hoy</h3>
+                    <div class="space-y-4">
+                        <a href="articulo.html" class="flex items-start gap-4 group">
+                            <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+                                <img src="https://placehold.co/100x100"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-700 group-hover:text-teal-600 leading-snug">
+                                    Hielo-Terapia: Por qué frotar pepino congelado...</h4>
+                            </div>
+                        </a>
+                        <a href="articulo.html" class="flex items-start gap-4 group">
+                            <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+                                <img src="https://placehold.co/100x100"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-700 group-hover:text-teal-600 leading-snug">
+                                    Detox de Pies: Baño de sal y vinagre...</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MONETIZACIÓN: SIDEBAR STICKY (UBICACIÓN 2.2) -->
+                <div class="sticky top-24">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex justify-center">
+                        <div class="ad-placeholder w-[160px] h-[600px] !m-0">
+                            <span class="ad-label">Publicidad</span>
+                            ESPACIO [160x600] (Sticky)
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-100 pt-16 pb-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-slate-400 text-sm">
+                &copy; 2024 MiRECETA.COM. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
